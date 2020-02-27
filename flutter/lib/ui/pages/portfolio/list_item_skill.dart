@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:xstar97_web/logic/repo/firestore_repository.dart';
 
 var fireRepo = FireStoreRepository();
+class SkillModel{
+  String name;
+  SkillModel(this.name);
+}
 class ListItemSkill extends StatelessWidget{
   ListItemSkill(this.document);
   final DocumentSnapshot document;

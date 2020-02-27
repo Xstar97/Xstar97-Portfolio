@@ -1,0 +1,67 @@
+{
+  "@@last_modified": "2020-01-24T17:05:31.447308",
+  "title": "Xstar97 Portfolio",
+  "@title": {
+    "description": "Name of the site",
+    "type": "text",
+    "placeholders": {}
+  },
+  "helloWorld": "Hello World",
+  "@helloWorld": {
+    "description": "the first app greeting",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutMe": "About Me",
+  "@aboutMe": {
+    "description": "info of me",
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutMeDescription": "Hi, I'm Xstar97!\n\nI live and breathe code and love reading books and watching anime!\nplease checkout of my projects on here or the code on github :)",
+  "@aboutDescription": {
+    "description": "description of me",
+    "type": "text",
+    "placeholders": {}
+  },
+  "headerItemGithub": "Github",
+  "@headerItemGithub": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "headerItemLinkedIn": "LinkedIn",
+  "@headerItemLinkedIn": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "skillsTitle": "Skills",
+  "@skillsTitle": {
+    "description": "skills",
+    "type": "text",
+    "placeholders": {}
+  },
+  "projectsTitle": "Projects",
+  "@projectsTitle": {
+    "description": "list of work",
+    "type": "text",
+    "placeholders": {}
+  },
+  "launchApp": "Launch",
+  "@launchApp": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "greetingMessage": "Hello {name}!",
+  "@greetingMessage": {
+    "description": "Greet the user as they first open the website",
+    "type": "text",
+    "placeholders": {
+      "name": {
+        "example": "Emily"
+      }
+    }
+  }
+}

@@ -1,7 +1,2 @@
-# xstar97_web
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a portfolio Flutter application.
+# Portfolio Website Using Flutter Web
+A portfolio website built using flutter for web.

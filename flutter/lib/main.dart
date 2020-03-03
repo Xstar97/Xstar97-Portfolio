@@ -1,43 +1,50 @@
-
+import 'package:adityagurjar/pages/home_page.dart';
+import 'package:adityagurjar/pages/splash.dart';
+import 'package:adityagurjar/widgets/theme_inherited_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
+import 'config/themes.dart';
 import 'generated/l10n.dart';
-import 'logic/repo/auth_repository.dart';
-import 'ui/pages/splash/splash.dart';
-import 'ui/pages/splash/splash_bloc.dart';
 
-//var authRepo = Auth();
-Future<void> main() async {
-  /*if(authRepo.getCurrentUser == null) {
-    authRepo.signIn();
-  }*/
-  runApp(MaterialApp(
+void main() => runApp(MySplash());
+
+
+class MySplash extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
-         localizationsDelegates: [S.delegate],
-         supportedLocales: S.delegate.supportedLocales,
+        localizationsDelegates: [S.delegate],
+        supportedLocales: S.delegate.supportedLocales,
         onGenerateTitle: (BuildContext context) => S.of(context).title,
         theme: new ThemeData(
           primarySwatch: Colors.green,
           scaffoldBackgroundColor: Colors.black,
         ),
-        home: MyApp()
-        ));
-
-}
-
-class MyApp extends StatefulWidget {
-
-  @override
-  State<StatefulWidget> createState() {
-    return _MyAppState();
+        home: SplashPage()
+    );
   }
 }
 
-class _MyAppState extends State<MyApp> {
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SplashPage(splashBloc: SplashBloc(title: S.of(context).helloWorld));//AppLocalizations.of(context).helloWorld()));
+    return ThemeSwitcherWidget(
+      initialDarkModeOn: true,
+      child: MyAppHome(),
+    );
+  }
+}
+class MyAppHome extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      localizationsDelegates: [S.delegate],
+      supportedLocales: S.delegate.supportedLocales,
+      onGenerateTitle: (BuildContext context) => S.of(context).title,
+      theme:ThemeSwitcher.of(context).isDarkModeOn?darkTheme(context):lightTheme(context),
+      home: HomePage(),
+    );
   }
 }

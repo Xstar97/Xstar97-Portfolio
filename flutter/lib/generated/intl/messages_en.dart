@@ -19,19 +19,8 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
-  static m0(name) => "Hello ${name}!";
-
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-    "aboutMe" : MessageLookupByLibrary.simpleMessage("About Me"),
-    "aboutMeDescription" : MessageLookupByLibrary.simpleMessage("Hi, I\'m Xstar97!\n\nI live and breathe code and love reading books and watching anime!\nplease checkout of my projects on here or the code on github :)"),
-    "greetingMessage" : m0,
-    "headerItemGithub" : MessageLookupByLibrary.simpleMessage("Github"),
-    "headerItemLinkedIn" : MessageLookupByLibrary.simpleMessage("LinkedIn"),
-    "helloWorld" : MessageLookupByLibrary.simpleMessage("Hello World"),
-    "launchApp" : MessageLookupByLibrary.simpleMessage("Launch"),
-    "projectsTitle" : MessageLookupByLibrary.simpleMessage("Projects"),
-    "skillsTitle" : MessageLookupByLibrary.simpleMessage("Skills"),
     "title" : MessageLookupByLibrary.simpleMessage("Xstar97 Portfolio")
   };
 }

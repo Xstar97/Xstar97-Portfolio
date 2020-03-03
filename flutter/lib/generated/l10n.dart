@@ -37,87 +37,6 @@ class S {
       args: [],
     );
   }
-
-  String get helloWorld {
-    return Intl.message(
-      'Hello World',
-      name: 'helloWorld',
-      desc: 'the first app greeting',
-      args: [],
-    );
-  }
-
-  String get aboutMe {
-    return Intl.message(
-      'About Me',
-      name: 'aboutMe',
-      desc: 'info of me',
-      args: [],
-    );
-  }
-
-  String get aboutMeDescription {
-    return Intl.message(
-      'Hi, I\'m Xstar97!\n\nI live and breathe code and love reading books and watching anime!\nplease checkout of my projects on here or the code on github :)',
-      name: 'aboutMeDescription',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get headerItemGithub {
-    return Intl.message(
-      'Github',
-      name: 'headerItemGithub',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get headerItemLinkedIn {
-    return Intl.message(
-      'LinkedIn',
-      name: 'headerItemLinkedIn',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get skillsTitle {
-    return Intl.message(
-      'Skills',
-      name: 'skillsTitle',
-      desc: 'skills',
-      args: [],
-    );
-  }
-
-  String get projectsTitle {
-    return Intl.message(
-      'Projects',
-      name: 'projectsTitle',
-      desc: 'list of work',
-      args: [],
-    );
-  }
-
-  String get launchApp {
-    return Intl.message(
-      'Launch',
-      name: 'launchApp',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String greetingMessage(dynamic name) {
-    return Intl.message(
-      'Hello $name!',
-      name: 'greetingMessage',
-      desc: 'Greet the user as they first open the website',
-      args: [name],
-    );
-  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -125,7 +44,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
 
   List<Locale> get supportedLocales {
     return const <Locale>[
-      Locale('en', ''), Locale('es', ''),
+      Locale('en', ''),
     ];
   }
 

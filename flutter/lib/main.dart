@@ -7,11 +7,11 @@ import 'logic/repo/auth_repository.dart';
 import 'ui/pages/splash/splash.dart';
 import 'ui/pages/splash/splash_bloc.dart';
 
-var authRepo = Auth();
+//var authRepo = Auth();
 Future<void> main() async {
-  if(authRepo.getCurrentUser == null) {
+  /*if(authRepo.getCurrentUser == null) {
     authRepo.signIn();
-  }
+  }*/
   runApp(MaterialApp(
         debugShowCheckedModeBanner: false,
          localizationsDelegates: [S.delegate],

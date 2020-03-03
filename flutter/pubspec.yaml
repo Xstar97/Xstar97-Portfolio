@@ -20,10 +20,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-  firebase_core: ^0.4.4
-  firebase_auth: ^0.15.4
-  cloud_firestore: ^0.13.3
-  firebase_analytics: ^5.0.11
+  #firebase_core: ^0.4.4
+  #firebase_auth: ^0.15.4
+  #cloud_firestore: ^0.13.3
+  #firebase_analytics: ^5.0.11
 
   intl_translation: ^0.17.9
   intl: ^0.16.1
@@ -57,7 +57,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
+    - resources/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

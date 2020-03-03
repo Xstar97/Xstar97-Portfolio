@@ -16,30 +16,20 @@
 </head>
 <body>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="/__/firebase/7.9.3/firebase-app.js"></script>
+<script src="/__/firebase/7.9.3/firebase-analytics.js"></script>
+<script src="/__/firebase/7.9.3/firebase-auth.js"></script>
+<script src="/__/firebase/7.9.3/firebase-firestore.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
-
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDCXZIaqKA93CE9a2rPg7wq-cOxMS-tJgs",
-    authDomain: "xstar97-6b1f0.firebaseapp.com",
-    databaseURL: "https://xstar97-6b1f0.firebaseio.com",
-    projectId: "xstar97-6b1f0",
-    storageBucket: "xstar97-6b1f0.appspot.com",
-    messagingSenderId: "375105985859",
-    appId: "1:375105985859:web:8c0f8b859d4472e06623f6",
-    measurementId: "G-RCJYJ3XK58"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/flutter_service_worker.js');
+      });
+    }
+  </script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

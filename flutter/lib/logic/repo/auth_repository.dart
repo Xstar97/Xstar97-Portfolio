@@ -1,4 +1,5 @@
 import 'dart:async';
+/*
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:xstar97_web/logic/delegates/auth_delegate.dart';
 
@@ -46,4 +47,4 @@ class Auth implements AuthDelegate {
     return user.isEmailVerified;
   }
 
-}
+}*/

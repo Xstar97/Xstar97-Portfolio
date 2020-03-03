@@ -1,6 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:xstar97_web/logic/delegates/firestore_delegate.dart';
-
+/*
 class FireStoreRepository implements FireStoreRepoDelegate
 {
   var db = Firestore.instance;
@@ -36,4 +36,4 @@ class FireStoreRepository implements FireStoreRepoDelegate
     return db.collection(collectionDev).document(documentPortfolio);
   }
 
-}
+}*/

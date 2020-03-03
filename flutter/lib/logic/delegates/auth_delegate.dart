@@ -1,5 +1,6 @@
-import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
 
+/*
 abstract class AuthDelegate {
   Future<String> signInEmail(String email, String password);
 
@@ -13,4 +14,4 @@ abstract class AuthDelegate {
   Future<void> signOut();
 
   Future<bool> isEmailVerified();
-}
+}*/

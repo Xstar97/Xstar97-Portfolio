@@ -1,4 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:xstar97_web/generated/l10n.dart';
@@ -6,7 +6,7 @@ import 'package:xstar97_web/logic/repo/firestore_repository.dart';
 import 'package:xstar97_web/utils.dart';
 
 
-var fireRepo = FireStoreRepository();
+//var fireRepo = FireStoreRepository();
 var utils = Utils();
 class ProjectModel{
   String name;
@@ -16,6 +16,7 @@ class ProjectModel{
   String githubUrl;
   ProjectModel(this.name,this.img, this.description,this.appUrl,this.githubUrl);
 }
+/*
 class ListItemProject extends StatelessWidget{
   ListItemProject(this.document);
   final DocumentSnapshot document;
@@ -84,4 +85,4 @@ class ListItemProject extends StatelessWidget{
     );
   }
 
-}
+}*/
